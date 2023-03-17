@@ -1,7 +1,11 @@
 #include <stdio.h>
-int 4 - puts.c(void)
+/**
+ * main-main block
+ * Return: 0
+ */
+int main(void)
 {
-	puts('"Programming is like building a multilingual puzzle');
+	puts("\"Programming is like building a multilingual puzzle");
 
 	return (0);
 }
