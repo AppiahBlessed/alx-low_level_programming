@@ -11,7 +11,7 @@ char *_strcat(char *dest, char *src)
 	int lendest = 0;
 	int lensrc = 0;
 
-	for (i = 0; dest[i] != '\0'; i++ )
+	for (i = 0; dest[i] != '\0'; i++)
 		lendest++;
 	for (i = 0; src[i] != '\0'; i++)
 		lensrc++;
