@@ -4,6 +4,7 @@
  *@s: String variable
  *@b: Constant
  *@n: Number of times
+ *Return: String
  *
  */
 char *_memset(char *s, char b, unsigned int n)
@@ -12,6 +13,6 @@ char *_memset(char *s, char b, unsigned int n)
 
 	for (i = 0; i < n; i++)
 		s[1] = b;
-	return(s);
+	return (s);
 
 }
