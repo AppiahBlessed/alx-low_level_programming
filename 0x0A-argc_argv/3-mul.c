@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	}
 	a = atoi(argv[1]);/*Using atoi to convert char to int*/
 	b = atoi(argv[2]);
-	result = a + b;/*Add integers*/
+	result = a * b;/*Multiplies integers*/
 	printf("%d\n", result);/*Print result with new line*/
 	return (0);
 }
