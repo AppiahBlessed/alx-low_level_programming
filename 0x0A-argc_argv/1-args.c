@@ -5,7 +5,7 @@
  *@argv: Arguements array
  *Return: Returns 0 on success
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[5])
 {
 	int i;
 	/*Assiggn str to strore value of first arry*/
@@ -17,6 +17,6 @@ int main(int argc, char *argv[])
 			/*Just there to complete if statement*/
 			argc = argc;
 	}
-	printf("%d\n", argc);
+	printf("%d\n", (argc - 1));
 	return (0);
 }
