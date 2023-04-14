@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
 	}
 	printf("%d\n", result);/*Print results*/
-	return (1);
+	return (0);
 
 }
 
