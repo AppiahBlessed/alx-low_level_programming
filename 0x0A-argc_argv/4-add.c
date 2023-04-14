@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		for (a = 1; a < argc; a++)
 		{
 			b = atoi(argv[a]);/*Convert array string to integer and assign to b*/
-			if (b > 0)
+			if (b < 0 || b > 0)
 			{
 				result = result + b;/*Cumulative*/
 			}
