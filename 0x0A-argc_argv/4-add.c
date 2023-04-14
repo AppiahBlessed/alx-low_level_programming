@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	{
 		printf("0");
 	}
-	else if (argc == 2 )
+	else if (argc == 2)
 	{
 		printf("Error\n");
 		return (1);
