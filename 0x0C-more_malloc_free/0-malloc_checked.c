@@ -14,7 +14,6 @@ void *malloc_checked(unsigned int b)
 
 	if (dest == NULL)/*If condition for NULL*/
 	{
-		fprintf(stderr, " ");/*Print empty string to standard error*/
 		exit(98);/*Returns exit integer 98 when $? is called*/
 	}
 	return (dest);
