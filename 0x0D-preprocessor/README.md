@@ -9,4 +9,6 @@ Create a header file that defines a macro named SIZE as an abbreviation for the 
 mandatory
 Write a program that prints the name of the file it was compiled from, followed by a new line.
 
-You are allowed to use the standard library.
+3. Function-like macro
+mandatory
+Write a function-like macro ABS(x) that computes the absolute value of a number x.
