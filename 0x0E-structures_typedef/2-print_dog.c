@@ -2,30 +2,23 @@
 #include <string.h>
 #include <stdio.h>
 /**
- *
- *
+ *print_dog - Prints dog
+ *@d: Member
  *
  *
  *
  */
 void print_dog(struct dog *d)
 {
-	if ((*d).name == NULL)
-	{
-		printf("Name: (nil)\n");
-	}
-	if ((*d).owner == NULL)
-	{
-		printf("Owner: (nil)\n");
-	}
+	/*Print nothing if d == NULL*/
 	if (d == NULL)
 	{
-		printf(" ");
+		return;
 	}
 		else
 		{
-			printf("Name: %s\n", (*d).name);
-			printf("Age: %f\n", (*d).age);	
-			printf("Owner: %s\n", (*d).owner);
+			printf("Name: %s\n", (*d).name ? (*d).name : "(nil)");
+			printf("Age: %f\n", (*d).age);/*Use ternary operator*/
+			printf("Owner: %s\n", (*d).owner ? (*d).owner : "(nil)");
 		}
 }
