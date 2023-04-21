@@ -17,13 +17,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	/*Loop to get elements or arguements*/
 	for (i = 0; i < n; i++)
 	{
-		printf("%d%s", va_arg(list, int), separator);
-		if (i == n-1 && separator != NULL)
-		{
-			printf("%d\n", va_arg(list, int));
-		}
+		printf("%d", va_arg(list, int));
+			if (i < n - 1 && separator != NULL)
+			{
+				printf("%s", separator);
+			}
 
 	}
 	va_end(list);/*End macro*/
+	printf("\n");
 
 }
