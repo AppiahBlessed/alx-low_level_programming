@@ -24,3 +24,13 @@ Write a function that adds a new node at the beginning of a listint_t list.
 Prototype: listint_t *add_nodeint(listint_t **head, const int n);
 Return: the address of the new element, or NULL if it failed
 gcc compile code = gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_nodeint.c 0-print_listint.c -o c
+
+
+
+3. Add node at the end
+mandatory
+Write a function that adds a new node at the end of a listint_t list.
+
+Prototype: listint_t *add_nodeint_end(listint_t **head, const int n);
+Return: the address of the new element, or NULL if it failed
+gcc compikle code = gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_nodeint_end.c 0-print_listint.c -o d
