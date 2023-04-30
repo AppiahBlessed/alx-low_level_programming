@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *print_listint_safe - Prints linked list
+ *looped_list - Prints linked list
  *@head: Points to first node
  *Return: Returns number of nodes in the list
  *
