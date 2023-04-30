@@ -3,7 +3,7 @@
  *insert_nodeint_at_index - Insert new node at idx
  *Return: Returns pointer to new node
  *@head: Pointer to pointer
- *@idx: Index 
+ *@idx: Index
  *@n: Item member of new node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
@@ -15,7 +15,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	{
 		return (NULL);
 	}
-	if ( idx == 0)/*If we want to insert at the beginning of list*/
+	if (idx == 0)/*If we want to insert at the beginning of list*/
 	{
 		addedNode = malloc(sizeof(listint_t));
 		if (addedNode == NULL)
@@ -42,12 +42,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			return (NULL);
 		}
 		addedNode->n = n;/*Give new node element*/
-		addedNode ->next = current;
+		addedNode->next = current;
 		prev->next = addedNode;
 	}
 		else
-		{
 			return (NULL);
-		}
 	return (addedNode);
 }
