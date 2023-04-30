@@ -138,3 +138,16 @@ You should go though the list only once
 Returns: the size of the list that was free’d
 The function sets the head to NULL
 gcc compilation code: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 102-main.c 2-add_nodeint.c 101-print_listint_safe.c 102-free_listint_safe.c -o n
+
+
+
+14. Find the loop
+#advanced
+Write a function that finds the loop in a linked list.
+
+Prototype: listint_t *find_listint_loop(listint_t *head);
+Returns: The address of the node where the loop starts, or NULL if there is no loop
+You are not allowed to use malloc, free or arrays
+You can only declare a maximum of two variables in your function
+gcc compilation code: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 103-main.c 2-add_nodeint.c 101-print_listint_safe.c 102-free_listint_safe.c 103-find_loop.c -o o
+
