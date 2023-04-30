@@ -50,3 +50,12 @@ Write a function that frees a listint_t list.
 Prototype: void free_listint2(listint_t **head);
 The function sets the head to NULL
 gcc compilation code = gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c -o f
+
+
+6. Pop
+mandatory
+Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
+
+Prototype: int pop_listint(listint_t **head);
+if the linked list is empty return 0
+gcc compilation code= gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 6-pop_listint.c -o g
