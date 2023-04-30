@@ -59,3 +59,12 @@ Write a function that deletes the head node of a listint_t linked list, and retu
 Prototype: int pop_listint(listint_t **head);
 if the linked list is empty return 0
 gcc compilation code= gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 6-pop_listint.c -o g
+
+7. Get node at index
+mandatory
+Write a function that returns the nth node of a listint_t linked list.
+
+Prototype: listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
+where index is the index of the node, starting at 0
+if the node does not exist, return NULL
+gcc compilation code: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 7-get_nodeint.c -o h
