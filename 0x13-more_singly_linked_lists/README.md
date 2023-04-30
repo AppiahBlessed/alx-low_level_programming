@@ -68,3 +68,12 @@ Prototype: listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 where index is the index of the node, starting at 0
 if the node does not exist, return NULL
 gcc compilation code: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 7-get_nodeint.c -o h
+
+
+8. Sum list
+mandatory
+Write a function that returns the sum of all the data (n) of a listint_t linked list.
+
+Prototype: int sum_listint(listint_t *head);
+if the list is empty, return 0
+gcc compilation code: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 3-add_nodeint_end.c 5-free_listint2.c 8-sum_listint.c -o i
