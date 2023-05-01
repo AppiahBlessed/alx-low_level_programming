@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _abs - prints for absolute value
- * Return: True or False
- * @int: Data type
+ * Return: True or Fals
+ * @a: Vriablee
  *
  */
 
