@@ -1,29 +1,26 @@
 #include "main.h"
-/*
- * print_square -Prints squares
- * @size: skize of square
+/**
+ *print_square - Prints squares
+ *@size: size of square
  *
  */
 void print_square(int size)
 {
-	int i;
-	int k;
-
-	 if (size <= 0)
-		 {
-			 _putchar('\n');
-		 }
-	else
+	if (size <= 0)
 	{
-		for (i = 1; i <= size; i++)
-		{
+		_putchar('\n');
+	} else
+	{
+		int i, j;
 
-			for (k = 2; k <= size; k++)
+		for (i = 0; i < size; i++)
+		{
+			for (j = 0; j < size; j++)
 			{
 				_putchar('#');
 			}
 			_putchar('\n');
 		}
-	
 	}
+
 }
