@@ -5,49 +5,44 @@
  *@s1: First string holder
  *@s2: Second string holder
  *@n: Number of bytes to cut
- *Return: Returns destination pointer
+ *Return: Returns return pointer
  *
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
-{/*Initialize variables*/
-	unsigned int i;
-	unsigned int count = 0;
-	unsigned int count2 = 0;
-	char *dest;
-	/*Hnadle Null*/
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-/*Loop through s1 to get legnth*/
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-		count++;
-	} /*Loop through s2 to get string legnth*/
-	for (i = 0; s2[i] != '\0'; i++)
-	{
-		count2++;
-	}
-	dest = malloc(n + count * sizeof(char));
-	if (dest == NULL)/*Return NULL when errors*/
-	{
+{
+	char *s;
+	unsigned int i = 0
+	unsigned int j = 0;
+	unsigned int len1 = 0;
+	unsigned int len2 = 0;
+
+	while (s1 && s1[len1])
+		len1++;
+	while (s2 && s2[len2])
+		len2++;
+
+	if (n < len2)
+		s = malloc(sizeof(char) * (len1 + n + 1));
+	else
+		s = malloc(sizeof(char) * (len1 + len2 + 1));
+
+	if (!s)
 		return (NULL);
-	} /*Assign string contents in s1 to dest*/
-	for (i = 0; s1[i] != '\0'; i++)
+
+	while (i < len1)
 	{
-		dest[i] = s1[i];
-	} /*Append full all of s2 to dest*/
-	if (n > count2)
-	{
-		for (i = 0; i <= count; i++)
-			dest[count + i] = s2[i];
+		s[i] = s1[i];
+		i++;
 	}
-	else/*Append n bytes of s2 to dest*/
-	{
-		for (i = 0; i < n; i++)
-		{
-			dest[count + i] = s2[i];
-		}
-	} /*Return pointer to string*/
-	return (dest);
+
+	while (n < len2 && i < (len1 + n))
+		s[i++] = s2[j++];
+
+	while (n >= len2 && i < (len1 + len2))
+		s[i++] = s2[j++];
+
+	s[i] = '\0';
+
+	return (s);
+
 }
