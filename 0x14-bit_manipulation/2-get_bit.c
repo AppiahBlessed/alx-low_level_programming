@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *get_bit Gets bit equivalent at index
+ *get_bit - Gets bit equivalent at index
  *@n: Number to be converted
  *@index: Index at which to get bit
  *Return: Returns the value extracted
