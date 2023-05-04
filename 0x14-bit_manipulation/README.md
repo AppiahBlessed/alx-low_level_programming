@@ -45,4 +45,14 @@ Prototype: int set_bit(unsigned long int *n, unsigned int index);
 where index is the index, starting from 0 of the bit you want to set
 Returns: 1 if it worked, or -1 if an error occurred
 
-Gcc compilation code:  gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-set_bit.c -o d 
+Gcc compilation code:  gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-set_bit.c -o d
+
+
+4. 100
+mandatory
+Write a function that sets the value of a bit to 0 at a given index.
+
+Prototype: int clear_bit(unsigned long int *n, unsigned int index);
+where index is the index, starting from 0 of the bit you want to set
+Returns: 1 if it worked, or -1 if an error occurred
+Gcc compilation code: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-clear_bit.c -o e 
