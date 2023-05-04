@@ -23,3 +23,14 @@ You are not allowed to use malloc
 You are not allowed to use the % or / operators
 
 Gcc compilation code == gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-print_binary.c _putchar.c -o b
+
+
+2. 10
+mandatory
+Write a function that returns the value of a bit at a given index.
+
+Prototype: int get_bit(unsigned long int n, unsigned int index);
+where index is the index, starting from 0 of the bit you want to get
+Returns: the value of the bit at index index or -1 if an error occured
+
+Gcc compilation code: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-get_bit.c -o c  
