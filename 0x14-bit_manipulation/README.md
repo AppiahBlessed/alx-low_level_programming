@@ -55,4 +55,12 @@ Write a function that sets the value of a bit to 0 at a given index.
 Prototype: int clear_bit(unsigned long int *n, unsigned int index);
 where index is the index, starting from 0 of the bit you want to set
 Returns: 1 if it worked, or -1 if an error occurred
-Gcc compilation code: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-clear_bit.c -o e 
+Gcc compilation code: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-clear_bit.c -o e
+
+5. 101
+mandatory
+Write a function that returns the number of bits you would need to flip to get from one number to another.
+
+Prototype: unsigned int flip_bits(unsigned long int n, unsigned long int m);
+You are not allowed to use the % or / operators
+Gcc compilation code: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-flip_bits.c -o f 
