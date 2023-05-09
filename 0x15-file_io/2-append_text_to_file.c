@@ -22,12 +22,16 @@ int append_text_to_file(const char *filename, char *text_content)
 			count++;/*Length of text_content*/
 		}
 	}
+	else
+		return (-1);
 	fdp = open(filename, O_WRONLY | O_APPEND);/*Write for already existing file*/
 	res = write(fdp, text_content, count);/*Res is the descriptor*/
 	if (fdp == -1 || res == -1)/*If any fal*/
 	{
 		return (-1);
 	}
+	else 
+		return (1);
 	close(fdp);
 	return (1);
 
