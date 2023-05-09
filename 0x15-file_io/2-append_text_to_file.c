@@ -9,7 +9,8 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fdp, count, i, res = 0;
+	int fdp, count = 0;
+	int res = 0;
 
 	if (filename == NULL)
 	{
@@ -17,21 +18,17 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	if (text_content != NULL)
 	{
-		for (i = 0; text_content[i] != '\0'; i++)
+		for (count = 0; text_content[count])
 		{
 			count++;/*Length of text_content*/
 		}
 	}
-		else
-			return (-1);
 	fdp = open(filename, O_WRONLY | O_APPEND);/*Write for already existing file*/
 	res = write(fdp, text_content, count);/*Res is the descriptor*/
-	if (fdp == -1 || res == -1)/*If any fal*/
+	if (fdp == 0 || res == -1)/*If any fal*/
 	{
 		return (-1);
 	}
-		else
-			return (1);
 	close(fdp);
 	return (1);
 
