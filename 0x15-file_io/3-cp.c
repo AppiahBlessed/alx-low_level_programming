@@ -6,10 +6,10 @@ char *create_buffer(char *file);
 void close_f(int fdp);
 
 /**
- * create_buffer - Allocates bytes to buffer.
- * @file: The name of file..
+ *create_buffer - Allocates bytes to buffer.
+ *@file: The name of file..
  *
- * Return: A pointer to the new buffer.
+ *Return: A pointer to the new buffer.
  */
 char *create_buffer(char *file)
 {
@@ -25,8 +25,8 @@ char *create_buffer(char *file)
 	return (buffer);
 }
 /**
- * close - Closes file descriptors function.
- * @fd: The file descriptor..
+ *close_f - Closes file descriptors function.
+ *@fdp: The file descriptor..
  */
 void close_f(int fdp)
 {
@@ -41,10 +41,10 @@ void close_f(int fdp)
 }
 
 /**
- * main - Copies content from one file to another file
- * @argc: The number of arguments at runtime.
- * @argv: Array of pointers to arguments.
- * Return: Returns 0 on success.
+ *main - Copies content from one file to another file
+ *@argc: The number of arguments at runtime.
+ *@argv: Array of pointers to arguments.
+ *Return: Returns 0 on success.
  *
  */
 int main(int argc, char *argv[])
