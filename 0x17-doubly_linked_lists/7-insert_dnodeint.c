@@ -12,11 +12,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int i = 0;
 
 	temp = *h;
-	newnode = malloc(sizeof(dlistint_t));
-	if (newnode == NULL)
-	{
-		return (NULL);
-	}
 	if (h == NULL)
 	{
 		return (NULL);
@@ -25,12 +20,17 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		add_dnodeint(h, n);/*Called from file 2*/
 	}
-	while (temp != NULL && i < idx -1)/*Fall at exact index*/
+	while (temp != NULL && i < idx - 1)/*Fall at exact index*/
 	{
 		temp = temp->next;
 		i++;
 	}
 	if (temp == NULL)/*When impossible to insert at position*/
+	{
+		return (NULL);
+	}
+	newnode = malloc(sizeof(dlistint_t));
+	if (newnode == NULL)
 	{
 		return (NULL);
 	}
