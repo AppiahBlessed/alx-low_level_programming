@@ -16,11 +16,13 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 /*Get indexx using key*/
 	index = key_index((const unsigned char *)key, ht->size);
 	current = ht->array[index];
+	if (index >= ht->size)
+		return (NULL);
 /*Traverse and get key value*/
 	while (current != NULL)
 	{
-		if (strcmp(key, ht->array[index]->key) == 0)
-			return (ht->array[index]->value);
+		if (strcmp(key, current->key) == 0)
+			return (current->value);
 		current = current->next;
 	}
 /*Returns Null is not found*/
