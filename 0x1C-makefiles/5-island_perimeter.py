@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-'''
-5-island_perimeter.py
-'''
+"""The fucntion calculates the perimeter of the island"""
 
 def island_perimeter(grid):
     """
     The fucntion calculates the perimeter of the island described in the grid.
 
-    :param grid: Grid made up of integers
+     Args:
+             grid (list): A list of list of integers representing an island.
     :return: Retursn the perimeter of the island
     """
     perimeter = 0
