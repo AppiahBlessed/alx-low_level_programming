@@ -58,5 +58,5 @@ OBJ: the .o files
 NAME: the name of the executable
 RM: the program to delete files
 The all rule should recompile only the updated source files
-The clean, oclean, fclean, re rules should never fail
+The clean, oclean, fclean, re rules should never fal
 You are not allowed to have a list of all the .o files
