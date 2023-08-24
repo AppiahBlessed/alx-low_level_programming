@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """The fucntion calculates the perimeter of the island"""
 
+
 def island_perimeter(grid):
     """
     The fucntion calculates the perimeter of the island described in the grid.
@@ -9,6 +10,7 @@ def island_perimeter(grid):
              grid (list): A list of list of integers representing an island.
     :return: Retursn the perimeter of the island
     """
+
     perimeter = 0
 
     for row in range(len(grid)):
